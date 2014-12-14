@@ -1,0 +1,462 @@
+html {
+      height: 100%;
+    }
+    body {
+      background: url('team2.jpg');
+      padding: 0;
+      text-align: center;
+      font-family: 'open sans';
+      position: relative;
+      margin: 0;
+      height: 100%;
+      -webkit-font-smoothing: antialiased;
+    }
+    
+    .wrapper {
+      background: linear-gradient(52deg, rgba(87, 5, 9, 0.51), rgba(48, 89, 71, 0.68));
+    	height: 100% !important;
+    	height: 100%;
+    	margin: 0 auto; 
+    	overflow: hidden;
+    }
+    
+    .main {
+      float: left;
+      width: 100%;
+      margin: 0 auto;
+    }
+    
+    .main section .page_container {
+      position: relative;
+      top: 15%;
+      margin: 0 auto 0;
+      max-width: 1000px;
+      z-index: 3;
+    }
+    
+    .main section.page1 {
+      /*background:rgb(230, 217, 200);*/
+    }
+    .main section.page2 {
+      /*background: #555557 url(back-phone.png) no-repeat center -150px ;*/
+    }
+    .main section.page3 {
+      /*background:url(tilted-phone.png) no-repeat 156px -150px ;*/
+    }
+    body.disabled-onepage-scroll .onepage-wrapper  section {
+      min-height: 100%;
+      height: auto;
+    }
+    
+    body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+      padding: 20px;
+      margin-top: 150px;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    
+    body.disabled-onepage-scroll  section .page_container h1{
+      text-align: center;
+      font-size: 50px;
+    }
+    body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+      text-align: center;
+      width: 100%;
+    }
+    
+    body.disabled-onepage-scroll .main section.page1 > img {
+      position: absolute;
+      width: 80%;
+      left: 10%;
+    }
+    
+    body.disabled-onepage-scroll .main section > img {
+      position: relative;
+      max-width: 80%;
+      bottom: 0;
+    }
+    body.disabled-onepage-scroll code {
+      width: 95%;
+      margin: 0 auto 25px;
+      float: none;
+      overflow: hidden;
+    }
+    
+    body.disabled-onepage-scroll .main section.page3 .page_container {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      right: 0;
+    }
+
+
+
+
+
+    /* Common style */
+.grid {
+  margin: 0 auto;
+  /*max-width: 1000px;*/
+  text-align: center;
+  width: 80%;
+}
+
+.grid a {
+  display: inline-block;
+  max-width: 200px;
+  width: 25%;
+  color: #333;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+
+.grid a:nth-child(odd) {
+  /*/margin: 0px 0 -30px 0;*/
+}
+
+.grid figure {
+  position: relative;
+  overflow: hidden;
+  margin: 5px;
+  background: #333;
+}
+
+.grid figure img {
+  position: relative;
+  display: block;
+  width: 100%;
+  opacity: 0.7;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.grid figcaption {
+  position: absolute;
+  top: 0;
+  z-index: 11;
+  padding: 10px;
+  width: 90%;
+  height: 100%;
+  text-align: center;
+}
+
+.grid figcaption h2 {
+  margin: 0 0 5px 0;
+  color: #3498db;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 900;
+  font-size: 90%;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+.grid figcaption p {
+  padding: 0 20px;
+  color: #aaa;
+  font-weight: 900;
+  margin: 0;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption h2,
+.grid figcaption p {
+  -webkit-transform: translateY(15px);
+  transform: translateY(15px);
+}
+
+.grid figure button {
+  /*position: absolute;*/
+  padding: 4px 20px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+.grid figcaption,
+.grid figcaption h2,
+.grid figcaption p,
+.grid figure button {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Style for SVG */
+.grid svg {
+  position: absolute;
+  top: -1px; /* fixes rendering issue in FF */
+  z-index: 10;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: left;
+}
+
+.grid svg path {
+  fill: #fff;
+}
+
+/* Hover effects */
+.grid a:hover figure img {
+  opacity: 1;
+}
+
+.grid a:hover figcaption h2,
+.grid a:hover figcaption p {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.grid a:hover figcaption p {
+  opacity: 0;
+}
+
+/* Individual styles */
+.demo-1 body {
+  background: #3498db;
+}
+
+.demo-1 .grid figure button,
+.demo-3 .grid figure button {
+  bottom: 0;
+  left: 50%;
+  /*border: 3px solid #fff;*/
+  background: rgba(0,0,0,0.4);
+  color: #fff;
+  opacity: 0;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(0.25);
+  transform: translateY(-50%) translateX(-50%) scale(0.25);
+}
+
+.demo-1 .grid a:hover figure button,
+.demo-3 .grid a:hover figure button {
+  opacity: 1;
+  -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+  transform: translateY(-50%) translateX(-50%) scale(1);
+}
+
+.demo-2 body {
+  background: #e74c3c;
+}
+
+.demo-2 .grid figcaption h2 {
+  color: #e74c3c;
+}
+
+.demo-2 .grid figcaption p {
+  -webkit-transition-delay: 0.05s;
+  transition-delay: 0.05s;
+}
+
+.demo-2 .grid figure button {
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  width: 100%;
+  background: #fff;
+  color: #333;
+  font-weight: 300;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+.demo-2 .grid a:hover figure button {
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.demo-2 .grid figcaption h2, 
+.demo-2 .grid figcaption p,
+.demo-3 .grid figcaption h2,
+.demo-3 .grid figcaption p {
+  -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1); /* older webkit */
+  -webkit-transition-timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+  timing-function: cubic-bezier(0.250, 0.250, 0.115, 1.445);
+}
+
+.demo-2 .grid a:hover figcaption p,
+.demo-3 .grid a:hover figcaption p {
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+  -webkit-transition-duration: 0.1s;
+  transition-duration: 0.1s;
+}
+
+.demo-3 body {
+  background: url('../img/team2.jpg') repeat-x 0 bottom;
+  background-size: cover;
+  background-position: 0 -200px;
+  background-attachment: fixed;
+}
+
+.demo-3 .grid figcaption h2 {
+  color: #52be7f;
+}
+
+.demo-3 .grid a:hover figcaption h2 {
+  -webkit-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+/* Media Queries */
+/* Let's redefine the width of each anchor and the margins */
+
+@media screen and (max-width: 58em) {
+  .grid a {
+    width: 33.333%;
+  }
+
+  .grid a:nth-child(odd) {
+    margin: 0;
+  }
+
+  .grid a:nth-child(3n-1) {
+    margin: 30px 0 -30px 0;
+  }
+}
+
+@media screen and (max-width: 45em) {
+  .grid {
+    max-width: 500px;
+  }
+
+  .grid a {
+    width: 50%;
+  }
+
+  .grid a:nth-child(3n-1) {
+    margin: 0;
+  }
+
+  .grid a:nth-child(even) {
+    margin: 30px 0 -30px 0;
+  }
+
+
+  .grid figcaption h2 {
+    margin-bottom: 0px;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  .grid figcaption p {
+    margin: 0;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 27em) {
+  .grid {
+    max-width: 250px;
+  }
+
+  .grid a {
+    width: 100%;
+  }
+
+  .grid a:nth-child(even) {
+    margin: 0;
+  }
+}
+
+
+/* sponsors ticker */
+
+.circlecopy {
+  position: fixed;
+  right: -180px;
+  top: 150px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px dashed rgba(255,255,255,0.5);
+}
+
+.circle {
+  position: fixed;
+  right: -180px;
+  top: 150px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+/*LITTLE CIRCLES*/
+.circle li {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  /*background: white;*/
+  /*background: url('img/logos/i3indya.png');*/
+  background-size: 100px;
+  border-radius: 50%;
+  /*box-shadow: inset 0px 0px 5px white;*/
+  list-style-type: none;
+  text-align: center;
+  font: 20px/50px Helvetica, Arial, sans-serif;
+  top: 0;
+  left: 0;
+  color: white;
+}
+
+.circle li:nth-child(1) {
+  top: -25px;
+  left: 125px;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.circle li:nth-child(2) {
+  top: 125px;
+  left: 275px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.circle li:nth-child(3) {
+  top: 275px;
+  left: 125px;
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.circle li:nth-child(4) {
+  top: 125px;
+  left: -25px;
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+
+/* sponsors ticker  */

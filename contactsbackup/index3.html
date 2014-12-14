@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-3 no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<title>Shape Hover Effect with SVG | Demo 3</title>
+		<meta name="description" content="Hover Effects with animated SVG Shapes using Snap.svg" />
+		<meta name="keywords" content="animated svg, hover effect, grid, svg shape html, " />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/snap.svg-min.js"></script>
+		<script src="js/jquery.smoothwheel.js"></script>
+			<script type="text/javascript">
+
+			// speed in milliseconds
+			var scrollSpeed = 70;
+			
+			// set the default position
+			var current = 0;
+
+			// set the direction
+			var direction = 'h';
+
+			function bgscroll(){
+
+		    	// 1 pixel row at a time
+			    current -= 1;
+		   
+			    // move the background with backgrond-position css properties
+			    $('body').css("backgroundPosition", (direction == 'h') ? current+"px 0" : "0 " + current+"px");
+		   
+			}
+
+			//Calls the scrolling function repeatedly
+			 setInterval("bgscroll()", scrollSpeed);	
+
+		</script>
+		<script>
+
+        $(document).ready(function(){
+            $(".container").smoothWheel()
+        });
+
+    </script>
+		<!--[if IE]>
+  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<div class="container">
+			<!-- Top Navigation -->
+			<div class="codrops-top clearfix">
+			</div>
+			<header class="codrops-header">
+			</header>
+			<section id="grid" class="grid clearfix">
+				<img src="img/festi.png" width="350px"><br><br>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/shreyansh.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Shreyansh Singh</h2>
+							<p>Festii</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/tandon.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Shivyansh Tandon</h2>
+							<p>Festii</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+			</section>
+			<section id="grid" class="grid clearfix">
+				<h2>Marketing Team</h2>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/mahajan.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Akshay Mahajan</h2>
+							<p>Head Marketing</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/aman.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Aman Jain</h2>
+							<p>Head Marketing</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/bansi.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Rishabh Bansal</h2>
+							<p>Head Marketing</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+			</section>
+			<section id="grid" class="grid clearfix">
+				<h2>Events Team</h2>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/arun.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Arun Chaurasia</h2>
+							<p>Head Events</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/ashu.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Ashutosh Kumar</h2>
+							<p>Head Events</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/kp.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Karan Pal</h2>
+							<p>Head Events</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+			</section>
+			<section id="grid" class="grid clearfix">
+				<h2>Public Relations Team</h2>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/kabra.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Arpit Kabra</h2>
+							<p>Head PR</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/him.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Himanshu Jaiswal</h2>
+							<p>Head PR</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/vibe.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Vibhor Agnihotri</h2>
+							<p>Head PR</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+			</section>
+			<section id="grid" class="grid clearfix">
+				<h2>Media and Publicity</h2>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/subhro.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Subhrajeet Paul</h2>
+							<p>Head MnP</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+			</section>
+			<section id="grid" class="grid clearfix">
+				<h2>Web and Creatives</h2>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/romit.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Romit Choudhary</h2>
+							<p>Head Web</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/bhanu.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Bhanu Pratap</h2>
+							<p>Head Web</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/shankar.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Aditya Shankar</h2>
+							<p>Head Creatives</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+			</section>
+			<section id="grid" class="grid clearfix">
+				<h2>Show Management</h2>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/romit.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Rohan Sharma</h2>
+							<p>Head ShowM</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/bhanu.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Umang Shukla</h2>
+							<p>Head MnP</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+			</section>
+			<section id="grid" class="grid clearfix">
+				<h2>Security</h2>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/romit.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Abhay Gupta</h2>
+							<p>Head Security</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+				<a href="#" data-path-hover="M 0,0 0,38 90,58 180.5,38 180,0 z">
+					<figure>
+						<img src="img/bhanu.jpg" />
+						<svg viewBox="0 0 180 320" preserveAspectRatio="none"><path d="M 0 0 L 0 182 L 90 126.5 L 180 182 L 180 0 L 0 0 z "/></svg>
+						<figcaption>
+							<h2>Suraj Pratap Singh</h2>
+							<p>Head Security</p>
+							<button>View</button>
+						</figcaption>
+					</figure>
+				</a>
+			</section>
+			<section class="related">
+			</section>
+		</div><!-- /container -->
+		<script>
+			(function() {
+	
+				function init() {
+					var speed = 300,
+						easing = mina.backout;
+
+					[].slice.call ( document.querySelectorAll( '#grid > a' ) ).forEach( function( el ) {
+						var s = Snap( el.querySelector( 'svg' ) ), path = s.select( 'path' ),
+							pathConfig = {
+								from : path.attr( 'd' ),
+								to : el.getAttribute( 'data-path-hover' )
+							};
+
+						el.addEventListener( 'mouseenter', function() {
+							path.animate( { 'path' : pathConfig.to }, speed, easing );
+						} );
+
+						el.addEventListener( 'mouseleave', function() {
+							path.animate( { 'path' : pathConfig.from }, speed, easing );
+						} );
+					} );
+				}
+
+				init();
+
+			})();
+		</script>
+	</body>
+</html>
