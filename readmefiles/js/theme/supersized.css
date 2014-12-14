@@ -1,0 +1,57 @@
+/*
+
+	Supersized - Fullscreen Slideshow jQuery Plugin
+	Version : 3.2.4
+	Site	: www.buildinternet.com/project/supersized
+	
+	Author	: Sam Dunn
+	Company : One Mighty Roar (www.onemightyroar.com)
+	License : MIT License / GPL License
+	
+*/
+
+/** { margin:0; padding:0; }
+body { height:100%; background:transparent; }*/
+	img { border:none; }
+	
+	#supersized-loader { position:absolute; top:50%; left:50%; z-index:20; width:60px; height:60px; margin:-30px 0 0 -30px; text-indent:-999em; background:url(../../img/loadin-slide.gif) no-repeat center center;}
+	
+	#supersized {  display:block; position:absolute; left:0; top:0; overflow:hidden; z-index:-999; height:inherit; width:100%; margin-top:0;}
+		#supersized img { width:auto; height:auto; position:relative; display:none; outline:none; border:none;}
+			#supersized.speed img { -ms-interpolation-mode:nearest-neighbor; image-rendering: -moz-crisp-edges; }	/*Speed*/
+			#supersized.quality img { -ms-interpolation-mode:bicubic; image-rendering: optimizeQuality; }			/*Quality*/
+		
+		#supersized li { display:block; list-style:none; z-index:-30; position:absolute; overflow:hidden; top:0; left:0; width:100%; height:100%;}
+		#supersized a { width:100%; height:100%; display:block; }
+			#supersized li.prevslide { z-index:-20; }
+			#supersized li.activeslide { z-index:-10; }
+			#supersized li.image-loading { width:100%; height:100%; }
+				#supersized li.image-loading img{ visibility:hidden; }
+			#supersized li.prevslide img, #supersized li.activeslide img{ display:inline; }
+/*@media screen and (max-width: 630px),
+screen and (max-device-width: 630px) {
+#supersized { height:356px;}
+}*/
+
+.slide-0, .slide-1, .slide-2, .slide-3 {background:#ebebeb;}/*PROJET 1 IGO*/
+.slide-4, .slide-5, .slide-6, .slide-7 {background:#e22584;}/*PROJET 2 KPSULE*/
+.slide-8, .slide-9, .slide-10, .slide-11 {background:#fff;}/*PROJET 3 MONTSOURIS*/
+.slide-12, .slide-13, .slide-14, .slide-15 {background:#1f1f1f;}/*PROJET 4 AR*/
+.slide-16, .slide-17, .slide-18, .slide-19 {background:#7862ad;}/*PROJET 5 MILK*/
+.slide-20, .slide-21, .slide-22, .slide-23 {background:#ffde01;}/*PROJET 6 CARAMBAR*/
+.slide-24, .slide-25, .slide-26, .slide-27, .slide-28 {background:#212121;}/*PROJET 7 POLY*/
+.slide-29, .slide-30, .slide-31, .slide-32 {background:#fff;}/*PROJET 8 RNSCM*/
+.slide-33, .slide-34, .slide-35, .slide-36 {background:#d1c6b0;}/*PROJET 9 DEAD I*/
+.slide-37, .slide-38, .slide-39, .slide-40, .slide-41 {background:#8495dd;}/*PROJET 10 SOUPLINE*/
+.slide-42, .slide-43, .slide-44, .slide-45 .slide-46, .slide-47 {background:#ca0810;}/*PROJET 11 PI AGENCY*/
+
+/*AJOUT TEST 8/11*/
+#slider-realisations {
+	background:#fff;	
+}/*
+#supersized li.firstfold { padding-left:15%; -webkit-transition: padding-left .5s ease-out;
+-moz-transition: padding-left .5s ease-out;
+-o-transition: padding-left .5s ease-out;
+-ms-transition: padding-left .5s ease-out;
+transition: padding-left .5s ease-out;}
+#supersized li.firstfold.activeslide { padding-left:0; }*/
