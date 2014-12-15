@@ -182,30 +182,18 @@ footer{
 	position:absolute;
 	width:100%;
 	height:100%;
-	background:#000;
+	background:#e9e9e9;
 	z-index:999;	
 }
 #loading #bat{
 	position:absolute;
-	width:152px; 
-	height:36px;
-	top: 50%;
-	left:50%;
-	margin:-69px 0 0 -76px;	
-	background:url('../img/FK-load.png') top left no-repeat;
-}
-#loading #fill{
-	height: 100%;
-	background:url('../img/FK-load-complete.png') top left no-repeat;
-	width: 0%;
+	width:400px; 
+	margin-left: 520px;
+	margin-top: 140px;
+	/*margin:-69px 0 0 -76px;	*/
 }
 #loading img{
-	position:absolute;
-	width:152px; 
-	height:63px;
-	top: 50%;
-	left:50%;
-	margin:5px 0 0 -76px;
+	width: 80%;
 }
 #oldie{
 	color:#fff;	
@@ -417,9 +405,9 @@ a.submenu:hover{
 }
 /***********HOME*************/
 #home{
-	background: url('../img/components/bgplane.jpg');
+	background: url('../img/components/bg.jpg');
 	background-color: black;
-	background-size:100%;
+	background-size:100% 100%;
 	color: white;
 	height:100%;
 	display:block;
@@ -3003,7 +2991,7 @@ and (max-device-width : 1024px) {
 	left: 0;
 	right: 0;
 	height: 38px;
-	background: rgba(255,255,255,0.5);
+	background: rgba(255,255,255,0.3);
 	z-index: 1;
 }
 
@@ -3028,3 +3016,67 @@ and (max-device-width : 1024px) {
 	position: absolute;
 	bottom: 0;
 }
+
+
+/* move animations */
+
+.stylie {
+  -moz-animation-name: stylie-transform-keyframes;
+  -moz-animation-duration: 2000ms;
+  -moz-animation-delay: 2000ms;
+  -moz-animation-fill-mode: forwards;
+  -moz-animation-timing-function: linear;
+  -moz-animation-iteration-count: 1;
+  -ms-animation-name: stylie-transform-keyframes;
+  -ms-animation-duration: 2000ms;
+  -ms-animation-delay: 2000ms;
+  -ms-animation-fill-mode: forwards;
+  -ms-animation-timing-function: linear;
+  -ms-animation-iteration-count: 1;
+  -o-animation-name: stylie-transform-keyframes;
+  -o-animation-duration: 2000ms;
+  -o-animation-delay: 2000ms;
+  -o-animation-fill-mode: forwards;
+  -o-animation-timing-function: linear;
+  -o-animation-iteration-count: 1;
+  -webkit-animation-name: stylie-transform-keyframes;
+  -webkit-animation-duration: 2000ms;
+  -webkit-animation-delay: 2000ms;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: 1;
+  animation-name: stylie-transform-keyframes;
+  animation-duration: 2000ms;
+  animation-delay: 2000ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  transform-origin: 0 0;
+}
+@-moz-keyframes stylie-transform-keyframes {
+  0% {-moz-transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+  	animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  100% {-moz-transform:translate(-83px, -67px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+}
+@-ms-keyframes stylie-transform-keyframes {
+  0% {-ms-transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+  	animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  100% {-ms-transform:translate(-83px, -67px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+}
+@-o-keyframes stylie-transform-keyframes {
+  0% {-o-transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+  	animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  100% {-o-transform:translate(-83px, -67px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+}
+@-webkit-keyframes stylie-transform-keyframes {
+  0% {-webkit-transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+  	animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  100% {-webkit-transform:translate(-163px, -65px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+}
+@keyframes stylie-transform-keyframes {
+  0% {transform:translate(0px, 0px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);
+  	animation-timing-function: cubic-bezier(.25,.25,.75,.75);}
+  100% {transform:translate(-163px, -65px) scale(1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) translate(-50%, -50%);}
+}
+
+/* move animations*/
