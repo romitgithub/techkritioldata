@@ -445,6 +445,6 @@
       }
 
       //Calls the scrolling function repeatedly
-       setInterval("bgscroll()", 60);  
+       // setInterval("bgscroll()", 60);  
 
 }(window.jQuery);

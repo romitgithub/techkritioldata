@@ -474,8 +474,8 @@ a.submenu:hover{
 }
 /***********L'AGENCE*************/
 #agence{
-	background: url('../img/components/bg.jpg');
-	background-size:100%;
+	background: url('../img/components/bg22.jpg');
+	background-size:100% 100%;
 	color: white;
 	min-height:100%;
 	display:block;
