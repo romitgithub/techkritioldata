@@ -27,6 +27,7 @@
     <link type="text/css" media="screen" rel="stylesheet" href="css/awwwards.css" />
 	<link rel="stylesheet" href="js/theme/supersized.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="js/theme/supersized.shutter.css" type="text/css" media="screen" />
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,800,300' rel='stylesheet' type='text/css'>
     <script type="text/javascript" src="js/browserdetect.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.1.min.js"><\/script>')</script>
@@ -48,28 +49,17 @@
 		$("#loading").fadeOut(function() { 
 			$("#container").fadeIn(1500) 
 		})
-		},1000);
+		},1500);
 	})
 	}
   </script>
-  <!--[if IE]>
-	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
-
-    </script>
-     <script type="text/javascript" >
-    document.createElement('header');
-    document.createElement('footer');
-    document.createElement('section');
-    document.createElement('nav');
-    </script>
-<![endif]-->	
  
 </head>
 <body>
 	<div id="loading">
 		<div id="bat">
 	    	<div id="fill"></div>
-	    	<img src="img/components/romitloader.gif">
+	    	<img src="img/katalund/letterT.gif">
 	    </div>
 <!--         [if (IE 6)|(IE 7)]>
    			<div id="oldie">Votre navigateur ne vous permet pas de bénéficier pleinement de cette application Web. <br />Merci de mettre votre navigateur à jour, ou d'utiliser un navigateur plus récent.</div>
@@ -107,26 +97,52 @@
    
     <section id="home" class="slide" style="z-index:100;">
 	    <div id="leftpart">
-	    	<!-- <img src="img/components/leftmenu.png" height="200px"> -->
-	    	<!-- <img src="img/components/facebook.png" height="40px" style="position:absolute;top:10px;left:21px;" class="leftanimate rotateInUpLeft">
-	    	<img src="img/components/techblog.png" height="40px" style="position:absolute;top:80px;left:38px;" class="leftanimate rotateInUpLeft">
-	    	<img src="img/components/twitter.png" height="40px" style="position:absolute;top:139px;left:22px;" class="leftanimate rotateInUpLeft"> -->
+	    	
 	    </div>	
+	    <div id="topart">
+	    	<img src="img/components/nayaplane.png" width="300px" class="planeanimations">
+	    </div>
 	    <div id="centerlogo">
 	    	<img src="img/components/logo.png" align="center" width="100%" class="">
 	    	<img src="img/components/katagolanew.png" width="63%" style="position:absolute;bottom:-50px;left:17.2%;z-index:10;" class="earthanimate bounceInUp">
 	    	<img src="img/components/condom.png" width="8.5%" style="position:absolute;left:35%;bottom:-120px;z-index:2;" class="stylie">
 	    </div>
 	    <div id="rightpart">
-	    	<!-- <img src="img/components/tosc.png" height="40px" style="position:absolute;top:10px;right:21px;" class="leftanimate rotateInUpRight">
-	    	<img src="img/components/register.png" height="40px" style="position:absolute;top:80px;right:38px;" class="leftanimate rotateInUpRight">
-	    	<img src="img/components/events.png" height="40px" style="position:absolute;top:139px;right:22px;" class="leftanimate rotateInUpRight"> -->
-	    	<!-- <img src="img/components/rightmenu.png" height="200px"> -->
+	    	<a href="http://techkriti.org/tosc" target="_blank" style="display:block;">
+		    	<div style="background-image:url('img/rightmenu/grid.png');width:85px;height:60px;margin-left:103px;background-size:100%;" class="parentblockrightpart">
+		    		<img src="img/rightmenu/tosc.png" width="80px" style="padding-top:12px;padding-left:3px;" class="childblockrightpart">
+		    		<p id="imgDescription1" style="background:#167c80;top: 2px;right: 32px;">TOSC</p>
+		    	</div>
+	    	</a>
+	    	<a href="http://portal.techkriti.org" target="_blank" style="display:block;">
+		    	<div style="background-image:url('img/rightmenu/grid.png');width:85px;height:60px;margin-left:103px;margin-bottom:-22px;background-size:100%;" class="parentblockrightpart">
+		    		<img src="img/rightmenu/register.png" width="70px" style="padding-top:12px;padding-left:13px;" class="childblockrightpart">
+		    		<p id="imgDescription2" style="background:#a2c5bf;top: 62px;right: 32px;">REGISTER</p>
+	    		</div>
+	    	</a>
+	    	<img src="img/rightmenu/satellite1.png" width="220px">
+	    	<img src="img/rightmenu/wifi.gif" style="position:absolute;top:36%;" width="80px">
+	    	<a href="http://techkriti.org/competitions" target="_blank" style="display:block;">
+		    	<div style="background-image:url('img/rightmenu/grid.png');width:85px;height:60px;margin-left:103px;margin-top:-30px;background-size:100%;" class="parentblockrightpart">
+		    		<img src="img/rightmenu/events.png" height="55px" style="padding-top:10px;padding-left:16px;" class="childblockrightpart">
+		    		<p id="imgDescription3" style="background:#e54b4b;position: absolute;bottom: 61px;right: 32px;">EVENTS</p>
+		    	</div>
+		    </a>
+		    <a href="http://techkriti.org/talks" target="_blank" style="display:block;">
+		    	<div style="background-image:url('img/rightmenu/grid.png');width:85px;height:60px;margin-left:103px;background-size:100%;" class="parentblockrightpart">
+		    		<img src="img/rightmenu/talks.png" height="55px" style="padding-top:10px;padding-left:22px;" class="childblockrightpart">
+		    		<p id="imgDescription4" style="background:#f19849;">TALKS</p>
+		    	</div>
+		    </a>
+	    	<!-- <img src="img/rightmenu/grid.png" width="85px" style="margin-left:103px;margin-bottom:-22px;">
+
+	    	<img src="img/rightmenu/grid.png" width="85px" style="margin-left:103px;margin-top:-30px">
+	    	<img src="img/rightmenu/grid.png" width="85px" style="margin-left:103px;"> -->
 	    </div>
 
-	   <!--  <div id="bottompart">
-	    	<a class="gotoagence" href="#agence" ><img src="img/components/gola.png" width="120px"></a>
-	    </div> -->
+	    <div id="bottompart">
+	    	<a class="gotoagence" href="#agence" ><img src="img/components/downarrow.png" width="32px" class="animatedinfi bounce"></a>
+	    </div>
 	    <canvas id="demo-canvas"></canvas>
     </section>
     
@@ -138,7 +154,42 @@
         <div id="real-content">
         	<div class="inner" style="padding:0;">
   				<div class="colonne">
-  				<img src="img/components/box.png" width="1100px">
+  					<div class="row1menu">
+  						<img src="img/menu/events.png" height="140px">
+  						<p>EVENTS</p>
+  					</div>
+  					<div class="row1menu">
+  						<img src="img/menu/workshops.png" height="140px">
+  						<p>WORKSHOPS</p>
+  					</div>
+  					<div class="row1menu">
+  						<img src="img/menu/efactor.png" height="140px">
+  						<p>E-FACTOR</p>
+  					</div>
+  					<div class="row2menu">
+  						<img src="img/menu/talks.png" height="140px">
+  						<p>TALKS</p>
+  					</div>
+  					<div class="row2menu">
+						<img src="img/menu/events.png" height="140px">
+  						<p>EVENTS</p>  						
+  					</div>
+  					<div class="row2menu">
+  						<img src="img/menu/exhibitions.png" height="140px">
+  						<p>EXHIBITIONS</p>
+  					</div>
+  					<div class="row3menu">
+  						<img src="img/menu/megaworld.png" height="140px">
+  						<p>MEGAWORLD</p>
+  					</div>
+  					<div class="row3menu">
+  						<img src="img/menu/funt.png" height="140px">
+  						<p>FUN-T</p>
+  					</div>
+  					<div class="row3menu">
+  						<img src="img/menu/events.png" height="140px">
+  						<p>EVENTS</p>
+  					</div>
 		        </div> 
        		</div>
         </div>
